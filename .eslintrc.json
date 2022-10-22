@@ -6,6 +6,5 @@
 ],
   "globals": {
     "React": "readonly"
-  },
-  
+  }
 }
