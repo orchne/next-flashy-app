@@ -7,7 +7,6 @@
       "@styles/*": ["styles/*"],
       "@assets/*": ["assets/*"],
       "@test/*": ["test/*"],
-
       "@lib/*": ["lib/*"]
     }
   },
