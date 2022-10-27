@@ -1,10 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
-import { colors } from "./global.config.js";
+import global from "./global.config.js";
 
 const theme = extendTheme({
-  fonts: {},
-
-  colors: colors,
+  fonts: global.Font.chakra(),
+  colors: global.Color.chakra(),
 });
 
 export default theme;

@@ -8,8 +8,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: global.Font.tailwind(),
     extend: {
-      colors: global.colors,
+      colors: global.Color.tailwind(),
     },
   },
   plugins: [
