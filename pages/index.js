@@ -1,9 +1,9 @@
-import Test from "@components/test/Test";
-
-export default function Home() {
+const Home = () => {
   return (
     <>
-      <Test></Test>
+      <div>hi</div>
     </>
   );
-}
+};
+
+export default Home;
