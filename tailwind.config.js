@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const global = require("./global.config.js");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
@@ -18,5 +19,6 @@ module.exports = {
       addVariant("child", "& > *");
       addVariant("child-hover", "& > *:hover");
     },
+    require("daisyui"),
   ],
 };

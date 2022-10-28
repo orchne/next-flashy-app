@@ -81,7 +81,7 @@ const Footer = () => {
 
             <li>
               <Link
-                class="text-gray-700 transition hover:text-gray-700/75"
+                className="text-gray-700 transition hover:text-gray-700/75"
                 href="/"
               >
                 History
@@ -90,7 +90,7 @@ const Footer = () => {
 
             <li>
               <Link
-                class="text-gray-700 transition hover:text-gray-700/75"
+                className="text-gray-700 transition hover:text-gray-700/75"
                 href="/"
               >
                 Services
@@ -99,7 +99,7 @@ const Footer = () => {
 
             <li>
               <Link
-                class="text-gray-700 transition hover:text-gray-700/75"
+                className="text-gray-700 transition hover:text-gray-700/75"
                 href="/"
               >
                 Projects
@@ -108,7 +108,7 @@ const Footer = () => {
 
             <li>
               <Link
-                class="text-gray-700 transition hover:text-gray-700/75"
+                className="text-gray-700 transition hover:text-gray-700/75"
                 href="/"
               >
                 Blog
@@ -117,7 +117,7 @@ const Footer = () => {
           </ul>
         </nav>
 
-        <ul class="mt-12 flex justify-center gap-6 md:gap-8">
+        <ul className="mt-12 flex justify-center gap-6 md:gap-8">
           <Link href="/">
             <li
               rel="noreferrer"
@@ -126,7 +126,7 @@ const Footer = () => {
             >
               <span class="sr-only">Facebook</span>
               <svg
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -144,11 +144,11 @@ const Footer = () => {
             <li
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:text-gray-700/75 hover:cursor-pointer"
+              className="text-gray-700 transition hover:text-gray-700/75 hover:cursor-pointer"
             >
               <span class="sr-only">Instagram</span>
               <svg
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -166,11 +166,11 @@ const Footer = () => {
             <li
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:text-gray-700/75 hover:cursor-pointer"
+              className="text-gray-700 transition hover:text-gray-700/75 hover:cursor-pointer"
             >
               <span class="sr-only">Twitter</span>
               <svg
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -184,11 +184,11 @@ const Footer = () => {
             <li
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:text-gray-700/75 hover:cursor-pointer"
+              className="text-gray-700 transition hover:text-gray-700/75 hover:cursor-pointer"
             >
-              <span class="sr-only">GitHub</span>
+              <span className="sr-only">GitHub</span>
               <svg
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
@@ -208,9 +208,9 @@ const Footer = () => {
               target="_blank"
               className="text-gray-700 transition hover:text-gray-700/75 hover:cursor-pointer"
             >
-              <span class="sr-only">Dribbble</span>
+              <span className="sr-only">Dribbble</span>
               <svg
-                class="h-6 w-6"
+                className="h-6 w-6"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
