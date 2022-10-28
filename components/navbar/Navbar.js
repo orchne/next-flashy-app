@@ -15,6 +15,8 @@ import {
 import DesktopNav from "./desktop/DesktopNavbar";
 import MobileNav from "./mobile/MobileNavbar";
 
+import Link from "next/link";
+
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
 
@@ -65,16 +67,18 @@ const Navbar = () => {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            fontFamily={"heading"}
-            variant={"link"}
-            href={"#"}
-          >
-            Sign In
-          </Button>
+          <Link href={"/login"}>
+            <Button
+              as={"a"}
+              fontSize={"sm"}
+              fontWeight={400}
+              fontFamily={"heading"}
+              variant={"link"}
+              className="cursor-pointer"
+            >
+              Sign In
+            </Button>
+          </Link>
           <Button
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
