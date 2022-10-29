@@ -79,20 +79,21 @@ const Navbar = () => {
               Sign In
             </Button>
           </Link>
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            fontFamily={"heading"}
-            color={"white"}
-            bg={"secondary.500"}
-            href={"#"}
-            _hover={{
-              bg: "secondary.400",
-            }}
-          >
-            Sign Up
-          </Button>
+          <Link href={"/register"}>
+            <Button
+              display={{ base: "none", md: "inline-flex" }}
+              fontSize={"sm"}
+              fontWeight={600}
+              fontFamily={"heading"}
+              color={"white"}
+              bg={"secondary.500"}
+              _hover={{
+                bg: "secondary.400",
+              }}
+            >
+              Sign Up
+            </Button>
+          </Link>
         </Stack>
       </Flex>
 

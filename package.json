@@ -35,12 +35,14 @@
     "daisyui": "^2.33.0",
     "dayjs": "^1.11.6",
     "embla-carousel-react": "^7.0.3",
+    "formik": "^2.2.9",
     "framer-motion": "^6.5.1",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-awesome-reveal": "^4.1.0",
     "react-dom": "18.2.0",
-    "react-simple-typewriter": "^4.0.5"
+    "react-simple-typewriter": "^4.0.5",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",

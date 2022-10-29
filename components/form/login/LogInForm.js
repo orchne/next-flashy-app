@@ -4,6 +4,7 @@ import {
   Checkbox,
   Flex,
   FormControl,
+  FormErrorMessage,
   FormLabel,
   Heading,
   Input,
@@ -12,9 +13,28 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
+import { useFormik } from "formik";
+import * as Yup from "yup";
+
 import Link from "next/link";
 
 export default function LoginForm() {
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: Yup.object({
+      email: Yup.string()
+        .required("Sorry, email is required")
+        .email("This is not a valid email"),
+      password: Yup.string().required("Sorry, password is required"),
+    }),
+    onSubmit: (values) => {
+      console.log(values);
+    },
+  });
+
   return (
     <Flex
       minH={"100vh"}
@@ -28,7 +48,7 @@ export default function LoginForm() {
             Sign in to your account
           </Heading>
           <Text fontSize={"lg"} color={"gray.600"}>
-            to enjoy all of our cool <Link href={"/"}>features</Link> ✌️
+            to start create and <Link href={"/"}>browse flashcard</Link>
           </Text>
         </Stack>
         <Box
@@ -36,15 +56,32 @@ export default function LoginForm() {
           bg={useColorModeValue("white", "gray.700")}
           boxShadow={"lg"}
           p={8}
+          onSubmit={formik.handleSubmit}
         >
           <Stack spacing={4}>
-            <FormControl id="email">
+            <FormControl
+              id="email"
+              isInvalid={formik.errors.email && formik.touched["email"]}
+            >
               <FormLabel>Email address</FormLabel>
-              <Input type="email" />
+              <Input
+                type="email"
+                name="email"
+                {...formik.getFieldProps("email")}
+              />
+              <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
             </FormControl>
-            <FormControl id="password">
+            <FormControl
+              id="password"
+              isInvalid={formik.errors.password && formik.touched["password"]}
+            >
               <FormLabel>Password</FormLabel>
-              <Input type="password" />
+              <Input
+                type="password"
+                name="password"
+                {...formik.getFieldProps("password")}
+              />
+              <FormErrorMessage>{formik.errors.password}</FormErrorMessage>
             </FormControl>
 
             <Stack spacing={10}>
