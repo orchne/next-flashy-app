@@ -40,12 +40,12 @@ export default function LoginForm() {
       minH={"100vh"}
       align={"center"}
       justify={"center"}
-      bg={useColorModeValue("gray.50", "gray.800")}
+      bg={useColorModeValue("background")}
     >
       <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
         <Stack align={"center"}>
           <Heading fontSize={"4xl"} fontFamily={"heading"}>
-            Sign in to your account
+            <span className="text-primary-400">Sign in</span> to your account
           </Heading>
           <Text fontSize={"lg"} color={"gray.600"}>
             to start create and <Link href={"/"}>browse flashcard</Link>
