@@ -34,7 +34,7 @@ const HeroSection = () => {
               <Cursor cursorColor="#e95677" /> flashcards.
             </p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-              <Link href="#">
+              <Link href="/search">
                 <button
                   className="px-8 py-3 shadow-md md:w-auto hover:bg-secondary-300 transition duration-200 focus:shadow-outline focus:outline-none text-lg font-semibold rounded-full bg-secondary-400"
                   rel="noopener noreferrer"

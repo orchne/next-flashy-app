@@ -1,12 +1,12 @@
 import SignupForm from "@components/form/signup/SignUpForm";
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const index = () => {
   return (
     <>
-      <Slide>
+      <Fade>
         <SignupForm />
-      </Slide>
+      </Fade>
     </>
   );
 };

@@ -1,12 +1,12 @@
 import LoginForm from "@components/form/login/LoginForm";
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const LoginPage = () => {
   return (
     <>
-      <Slide>
+      <Fade>
         <LoginForm />
-      </Slide>
+      </Fade>
     </>
   );
 };
