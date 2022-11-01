@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Checkbox,
+  Divider,
   Flex,
   FormControl,
   FormErrorMessage,
@@ -11,12 +12,15 @@ import {
   Stack,
   Text,
   useColorModeValue,
+  Center,
 } from "@chakra-ui/react";
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
 import Link from "next/link";
+
+import { FcGoogle } from "react-icons/fc";
 
 export default function LoginForm() {
   const formik = useFormik({
@@ -101,6 +105,14 @@ export default function LoginForm() {
                 }}
               >
                 Sign in
+              </Button>
+            </Stack>
+            <Divider />
+            <Stack spacing={2} align={"center"} maxW={"md"} w={"full"}>
+              <Button w={"full"} variant={"outline"} leftIcon={<FcGoogle />}>
+                <Center>
+                  <Text>Sign in with Google</Text>
+                </Center>
               </Button>
             </Stack>
 

@@ -17,6 +17,8 @@ const tags = [
   "Spanish",
   "English",
   "Indonesian",
+  "Egyptian",
+  "Malaysian",
 ];
 
 const index = () => {
@@ -25,9 +27,11 @@ const index = () => {
       <Container mt="8">
         <SearchBar />
       </Container>
-      <CategoryWrapper categoryList={tags}>
-        <CategoryTags />
-      </CategoryWrapper>
+      <div class="w-full mx-auto text-left md:w-11/12 xl:w-8/12 md:text-center">
+        <CategoryWrapper categoryList={tags}>
+          <CategoryTags />
+        </CategoryWrapper>
+      </div>
     </>
   );
 };
