@@ -2,15 +2,13 @@ import { IoMdAdd } from "react-icons/io";
 import { MdPeople } from "react-icons/md";
 import { Action, Fab } from "react-tiny-fab";
 import "react-tiny-fab/dist/styles.css";
-import { useRouter } from "next/router";
 
 const FloatingActionButton = () => {
-  const router = useRouter();
   const actionDashboard = () => {
-    router.push("/dashboard");
+    console.log("test");
   };
   const actionAddFlashcard = () => {
-    router.push("/new");
+    console.log("test");
   };
 
   return (
