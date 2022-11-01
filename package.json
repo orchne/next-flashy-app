@@ -44,6 +44,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
     "react-simple-typewriter": "^4.0.5",
+    "react-tiny-fab": "^4.0.4",
     "yup": "^0.32.11"
   },
   "devDependencies": {

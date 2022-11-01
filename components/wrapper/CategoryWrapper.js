@@ -1,4 +1,4 @@
-import { Center, Wrap, WrapItem, Container } from "@chakra-ui/react";
+import { Center, Wrap, WrapItem } from "@chakra-ui/react";
 import React from "react";
 
 const CategoryWrapper = (props) => {
