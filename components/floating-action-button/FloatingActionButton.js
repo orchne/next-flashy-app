@@ -1,6 +1,6 @@
 import { IoMdAdd } from "react-icons/io";
 import { MdPeople } from "react-icons/md";
-import { Action, Fab } from "react-tiny-fab";
+import { Action, Fab } from "./patch.js";
 import "react-tiny-fab/dist/styles.css";
 
 const FloatingActionButton = () => {
