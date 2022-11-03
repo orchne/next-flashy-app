@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Center,
   Checkbox,
   Divider,
   Flex,
@@ -12,7 +13,6 @@ import {
   Stack,
   Text,
   useColorModeValue,
-  Center,
 } from "@chakra-ui/react";
 
 import { useFormik } from "formik";

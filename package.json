@@ -15,7 +15,8 @@
     "prettier": "prettier --write",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
@@ -51,6 +52,7 @@
     "@babel/core": "^7.19.6",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@next/bundle-analyzer": "^13.0.1",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.13",
