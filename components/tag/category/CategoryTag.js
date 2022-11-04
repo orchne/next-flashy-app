@@ -1,13 +1,13 @@
 import { Button } from "@chakra-ui/react";
 import Link from "next/link";
 
-const CategoryTags = ({ tags, link }) => {
+const CategoryTag = ({ tag, link }) => {
   return (
     <>
       <Link href={`${link}`}>
         <Button
           size="sm"
-          key={tags}
+          key={tag}
           borderRadius="full"
           variant="outline"
           colorScheme={"secondary"}
@@ -17,11 +17,11 @@ const CategoryTags = ({ tags, link }) => {
             textColor: "white",
           }}
         >
-          {tags}
+          {tag}
         </Button>
       </Link>
     </>
   );
 };
 
-export default CategoryTags;
+export default CategoryTag;

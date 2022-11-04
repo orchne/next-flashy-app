@@ -1,0 +1,17 @@
+export const tags = [
+  "Biology",
+  "Chemistry",
+  "Physics",
+  "Python",
+  "Javascript",
+  "Algebra",
+  "Eminem",
+  "Git",
+  "Social",
+  "Agriculture",
+  "Spanish",
+  "English",
+  "Indonesian",
+  "Egyptian",
+  "Malaysian",
+];

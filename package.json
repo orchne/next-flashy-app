@@ -42,10 +42,12 @@
     "next": "12.3.1",
     "react": "18.2.0",
     "react-awesome-reveal": "^4.1.0",
+    "react-card-flip": "^1.1.6",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
     "react-simple-typewriter": "^4.0.5",
     "react-tiny-fab": "^4.0.4",
+    "swiper": "^8.3.1",
     "yup": "^0.32.11"
   },
   "devDependencies": {

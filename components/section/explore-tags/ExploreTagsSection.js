@@ -1,26 +1,10 @@
-import CategoryTags from "@components/category-tags/CategoryTags";
-import CategoryWrapper from "@components/wrapper/CategoryWrapper";
+import CategoryTag from "@components/tag/category/CategoryTag";
+import CategoryWrapper from "@components/wrapper/category/CategoryWrapper";
 import { Fade } from "react-awesome-reveal";
 
-const tags = [
-  "Biology",
-  "Chemistry",
-  "Physics",
-  "Python",
-  "Javascript",
-  "Algebra",
-  "Eminem",
-  "Git",
-  "Social",
-  "Agriculture",
-  "Spanish",
-  "English",
-  "Indonesian",
-  "Egyptian",
-  "Malaysian",
-];
+import { tags } from "./ExploreTagsSection.mock";
 
-const ExploreTags = () => {
+const ExploreTagsSection = () => {
   return (
     <Fade>
       <section class="px-4 py-20 mx-auto max-w-7xl">
@@ -35,7 +19,7 @@ const ExploreTags = () => {
             voluptate omnis repudiandae repellat.
           </p>
           <CategoryWrapper categoryList={tags}>
-            <CategoryTags />
+            <CategoryTag />
           </CategoryWrapper>
         </div>
       </section>
@@ -43,4 +27,4 @@ const ExploreTags = () => {
   );
 };
 
-export default ExploreTags;
+export default ExploreTagsSection;

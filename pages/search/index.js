@@ -1,7 +1,8 @@
 import { Container } from "@chakra-ui/react";
-import CategoryTags from "@components/category-tags/CategoryTags";
+import CategoryTag from "@components/tag/category/CategoryTag";
+
 import SearchBar from "@components/searchbar/SearchBar";
-import CategoryWrapper from "@components/wrapper/CategoryWrapper";
+import CategoryWrapper from "@components/wrapper/category/CategoryWrapper";
 
 const tags = [
   "Biology",
@@ -29,7 +30,7 @@ const index = () => {
       </Container>
       <div class="w-full mx-auto text-left md:w-11/12 xl:w-8/12 md:text-center">
         <CategoryWrapper categoryList={tags}>
-          <CategoryTags />
+          <CategoryTag />
         </CategoryWrapper>
       </div>
     </>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-const HeroSection = () => {
+const LandingHero = () => {
   const [text] = useTypewriter({
     words: [
       "Economy",
@@ -65,4 +65,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default LandingHero;

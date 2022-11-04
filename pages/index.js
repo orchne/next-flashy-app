@@ -1,14 +1,14 @@
-import HeroSection from "@components/header/hero/HeroSection";
-import ExploreTags from "@components/header/explore-tags-section/ExploreTags";
-import FloatingActionButton from "@components/floating-action-button/FloatingActionButton";
-import CardSlider from "@components/header/card-slider/CardSlider";
+import FloatingActionButton from "@components/button/floating-action/FloatingActionButton";
+import CardCarousel from "@components/carousel/card/CardCarousel";
+import LandingHero from "@components/hero/landing/LandingHero";
+import ExploreTagsSection from "@components/section/explore-tags/ExploreTagsSection";
 
 const Home = () => {
   return (
     <>
-      <HeroSection />
-      <CardSlider />
-      <ExploreTags />
+      <LandingHero />
+      <CardCarousel />
+      <ExploreTagsSection />
       <FloatingActionButton />
     </>
   );
