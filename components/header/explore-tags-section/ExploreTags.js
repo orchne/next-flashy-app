@@ -23,7 +23,7 @@ const tags = [
 const ExploreTags = () => {
   return (
     <Fade>
-      <section class="px-4 py-32 mx-auto max-w-7xl">
+      <section class="px-4 py-20 mx-auto max-w-7xl">
         <div class="w-full mx-auto text-left md:w-11/12 xl:w-8/12 md:text-center">
           <h1 class="mb-3 text-4xl font-bold text-gray-900 md:text-5xl md:leading-tight md:font-extrabold font-heading">
             Explore More <span className="text-secondary-400">Tags</span>
