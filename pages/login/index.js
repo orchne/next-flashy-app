@@ -1,4 +1,4 @@
-import LoginForm from "@components/form/login/LoginForm";
+import LoginForm from "@components/form/login/LogInForm";
 import { Fade } from "react-awesome-reveal";
 
 const LoginPage = () => {
