@@ -1,4 +1,5 @@
 import PreviewCard from "@components/card/preview/PreviewCard";
+import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { mockCards } from "./CardCarousel.mock";
 
@@ -8,29 +9,27 @@ const CardCarousel = ({ cards = mockCards }) => {
       <div className="max-w-8xl flex justify-center items-center mx-5 sm:mx-20 lg:mx-20">
         <div className="swiper">
           <Swiper
+            modules={[Pagination]}
             loop={true}
             slidesPerView="auto"
-            spaceBetween={15}
             centeredSlides={true}
+            pagination={{
+              type: "progressbar",
+              el: ".swiper-pagination",
+            }}
             centerInsufficientSlides={true}
             breakpoints={{
               0: {
                 slidesPerView: 1,
               },
-              820: {
+              768: {
                 slidesPerView: 2,
               },
-              1152: {
+              1024: {
                 slidesPerView: 3,
               },
-              1440: {
+              1536: {
                 slidesPerView: 4,
-              },
-              1720: {
-                slidesPerView: 5,
-              },
-              2560: {
-                slidesPerView: 6,
               },
             }}
             autoplay={true}
@@ -39,14 +38,14 @@ const CardCarousel = ({ cards = mockCards }) => {
               <SwiperSlide
                 key={i}
                 card={card}
-                className="swiper-slide items-center flex justify-center"
+                className="swiper-slide items-center flex justify-center "
               >
                 <PreviewCard />
               </SwiperSlide>
             ))}
           </Swiper>
 
-          {/* <div className="max-w-3xl rounded-md bg-primary-400 mx-auto mt-8 swiper-pagination bottom-0 relative"></div> */}
+          <div className="max-w-4xl rounded-md bg-orange-400 mx-auto mt-8 swiper-pagination bottom-0 relative"></div>
         </div>
       </div>
     </section>
