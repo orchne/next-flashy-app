@@ -22,6 +22,7 @@ npm run storybook
 
 ## Collections of UI KIT
 
+- [Chakra](https://chakra-ui.com/)
 - [Chakra Templates](https://chakra-templates.dev)
 - [Choc UI](https://choc-ui.com/)
 - [Meraki UI](https://merakiui.com/)
@@ -32,6 +33,8 @@ npm run storybook
 - [Headless UI](https://headlessui.dev/)
 - [Hyper UI](https://www.hyperui.dev/)
 - [Mantine](https://mantine.dev/)
+- [UI Mantine](https://ui.mantine.dev/)
+- [Flowbite](https://flowbite.com/)
 
 ## Asset Source
 
