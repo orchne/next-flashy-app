@@ -35,6 +35,9 @@ npm run storybook
 - [Mantine](https://mantine.dev/)
 - [UI Mantine](https://ui.mantine.dev/)
 - [Flowbite](https://flowbite.com/)
+- [Tailbits](https://www.tailbits.com/components/feature)
+- [Preline](https://preline.co)
+- [Tailblocks](https://tailblocks.cc)
 
 ## Asset Source
 
